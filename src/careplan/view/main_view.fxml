@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="careplan.controller.MainController">
+    <top>
+        <Label text="CarePlan – Tagesplan" style="-fx-font-size: 20;">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </Label>
+    </top>
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <HBox spacing="10">
+                <TextField fx:id="taskInput" promptText="Neue Aufgabe"/>
+                <Button fx:id="addButton" text="Hinzufügen"/>
+            </HBox>
+            <ListView fx:id="taskListView" prefHeight="400"/>
+        </VBox>
+    </center>
+</BorderPane>
+
